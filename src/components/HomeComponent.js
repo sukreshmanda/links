@@ -5,7 +5,7 @@ import data from "../data";
 function HomeComponent(){
     var dt = JSON.parse(JSON.stringify(data()));
     var df = dt.filter(item => {
-        return item["link"] != "/";
+        return item["link"] != "/"; 
     })
     return(
         <div>
