@@ -1,5 +1,6 @@
 import AmazonAffiliateComponent from "./components/AmazonAffiliateComponent";
 import HomeComponent from "./components/HomeComponent";
+import YoutubeComponent from "./components/YoutubeComponent";
 
 function data(){
     var data = [
@@ -10,10 +11,10 @@ function data(){
             "component": AmazonAffiliateComponent
         },
         {
-            "name": "Amazon Affiliate Link Generator",
-            "link": "/amazo-affiliate",
+            "name": "Youtube",
+            "link": "/youtube",
             "isProductionReady": false,
-            "component": AmazonAffiliateComponent
+            "component": YoutubeComponent
         },
         {
             "name": "Home ",
