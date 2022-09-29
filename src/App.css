@@ -81,3 +81,10 @@ However, delay the fade out process for 2.5 seconds */
   from {bottom: 30px; opacity: 1;}
   to {bottom: 0; opacity: 0;}
 }
+.item-inside{
+  width: 70%;
+  margin: 10px;
+  -webkit-box-shadow: -12px -3px 59px -24px rgba(0,0,0,0.84);
+  -moz-box-shadow: -12px -3px 59px -24px rgba(0,0,0,0.84);
+  box-shadow: -12px -3px 59px -24px rgba(0,0,0,0.84);
+}
