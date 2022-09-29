@@ -6,7 +6,7 @@ function AppHeader(){
     <div>
       <AppBar position="static">
           <Toolbar>
-            <Link to="/" style={{textDecoration : "none"}}>
+            <Link to="/" style={{textDecoration : "none", color: "white"}}>
               <Typography
               variant="h6"
               to="/"
