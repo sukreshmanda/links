@@ -11,7 +11,7 @@ function AmazonAffiliateComponent(){
     function displayGeneratedUrl(){
         const regex = new RegExp('(https?://)?([\\da-z.-]+)\\.([a-z.]{2,6})[/\\w .-]*/?');
         console.log(url, affiliateUrl);
-        if(regex.test(url) && url.includes("amzn.to")){
+        if(regex.test(url) && url.includes("amzn")){
           fetch('https://pickled-muddy-sleet.glitch.me/?url='+url)
           .then(res => res.json())
           .then(res => {
