@@ -44,7 +44,7 @@ function AmazonAffiliateComponent(){
                 color: 'inherit',
                 textDecoration: 'none',
               }}>Generate Amazon Affiliate Links
-            </Typography><br/><br/>
+            </Typography><br/><p style={{color : "red", fontWeight: "900"}}>Don't give short url's!!</p><br/>
             <div>
                 <TextField required label="Amazon URL" onChange={(e) => seturl(e.target.value)}></TextField>
                 <Button onClick={displayGeneratedUrl} variant="contained" sx={{ml:2}}>Generate</Button>
