@@ -16,7 +16,7 @@ function AmazonAffiliateComponent(){
           .then(res => res.json())
           .then(res => {
             console.log(res.url)
-            setAffiliateUrl(res.url+"&tag=sukresh242-21");
+            setAffiliateUrl(res.url+"&tag=sukresh2420a-21");
             setErrorOccured(null);
           })
           .catch(err => setErrorOccured(1))
