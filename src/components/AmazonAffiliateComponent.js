@@ -7,6 +7,7 @@ function AmazonAffiliateComponent(){
     let [affiliateUrl, setAffiliateUrl] = useState("none");
     let [snackBarOpen, setSnackBarOpen] = useState(false);
     let [errorOccured, setErrorOccured] = useState(null);
+    const tag = "&tag=sukresh2420a-21";
 
     function displayGeneratedUrl(){
         const regex = new RegExp('(https?://)?([\\da-z.-]+)\\.([a-z.]{2,6})[/\\w .-]*/?');
@@ -16,14 +17,14 @@ function AmazonAffiliateComponent(){
           .then(res => res.json())
           .then(res => {
             console.log(res.url)
-            setAffiliateUrl(res.url+"&tag=sukresh2420a-21");
+            setAffiliateUrl(res.url+tag);
             setErrorOccured(null);
           })
           .catch(err => setErrorOccured(1))
           return
         }
         if( regex.test(url) && url != "" && url != null){
-            setAffiliateUrl(url+"&tag=sukresh242-21");
+            setAffiliateUrl(url+tag);
             setErrorOccured(null);
         }
     }
