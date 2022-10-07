@@ -66,7 +66,14 @@ function AmazonAffiliateComponent(){
             {affiliateUrl != 'none' ?
                 <div style={{marginTop : "40px"}}>
                     URL : <Link href={affiliateUrl}>{"Affiliate Link"}</Link>
-                        <ContentCopyRounded fontSize="small" sx={{ml:3}} onClick={() => {
+                        <ContentCopyRounded fontSize="small"
+                          sx={{
+                            ml:3,
+                            '&:hover': {
+                              cursor: "copy"        
+                            }
+                          }}
+                          onClick={() => {
                             navigator.clipboard.writeText(affiliateUrl);
                             setSnackBarOpen(true);
                         }}/>
